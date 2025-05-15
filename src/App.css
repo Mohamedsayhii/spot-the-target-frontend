@@ -1,3 +1,5 @@
-#root {
-	padding: 2rem;
+.app {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
