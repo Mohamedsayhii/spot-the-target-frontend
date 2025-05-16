@@ -18,6 +18,7 @@ const PreviewWrapper = styled.div`
 	button {
 		padding: 1rem;
 		font-size: 1.5rem;
+		font-weight: bold;
 	}
 `;
 
