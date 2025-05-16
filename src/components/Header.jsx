@@ -1,7 +1,7 @@
 function Header() {
 	return (
 		<>
-			<h1>Where's Waldo</h1>
+			<h1>Spot The Target</h1>
 		</>
 	);
 }
