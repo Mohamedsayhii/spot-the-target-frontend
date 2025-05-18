@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const PreviewWrapper = styled.div`
@@ -16,6 +17,7 @@ const PreviewWrapper = styled.div`
 	}
 
 	button {
+		width: 100%;
 		padding: 1rem;
 		font-size: 1.5rem;
 		font-weight: bold;
@@ -27,7 +29,9 @@ function PlaygroundPreview({ playgroundTitle, playgroundImage }) {
 		<PreviewWrapper>
 			<h2>{playgroundTitle}</h2>
 			<img src={playgroundImage} alt='' />
-			<button>Play</button>
+			<Link to={`/${playgroundTitle.toLowerCase()}`}>
+				<button>Play</button>
+			</Link>
 		</PreviewWrapper>
 	);
 }
