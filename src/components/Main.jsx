@@ -23,18 +23,9 @@ function Main() {
 		<MainComponent>
 			<h1>Choose your playground</h1>
 			<div className='playgrounds'>
-				<PlaygroundPreview
-					playgroundTitle={'Carnisol'}
-					playgroundImage={'/src/assets/carnisol.gif'}
-				/>
-				<PlaygroundPreview
-					playgroundTitle={'Medieval'}
-					playgroundImage={'/src/assets/medieval.gif'}
-				/>
-				<PlaygroundPreview
-					playgroundTitle={'Prehistoric'}
-					playgroundImage={'/src/assets/prehistoric.gif'}
-				/>
+				<PlaygroundPreview playgroundName={'Carnisol'} />
+				<PlaygroundPreview playgroundName={'Medieval'} />
+				<PlaygroundPreview playgroundName={'Prehistoric'} />
 			</div>
 		</MainComponent>
 	);

@@ -24,12 +24,15 @@ const PreviewWrapper = styled.div`
 	}
 `;
 
-function PlaygroundPreview({ playgroundTitle, playgroundImage }) {
+function PlaygroundPreview({ playgroundName }) {
 	return (
 		<PreviewWrapper>
-			<h2>{playgroundTitle}</h2>
-			<img src={playgroundImage} alt='' />
-			<Link to={`/${playgroundTitle.toLowerCase()}`}>
+			<h2>{playgroundName}</h2>
+			<img
+				src={`/src/assets/${playgroundName.toLowerCase()}.gif`}
+				alt=''
+			/>
+			<Link to={`/${playgroundName.toLowerCase()}`}>
 				<button>Play</button>
 			</Link>
 		</PreviewWrapper>
