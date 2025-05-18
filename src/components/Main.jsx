@@ -6,7 +6,8 @@ const MainComponent = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	flex-grow: 1;
+	flex-grow: 0.8;
+	gap: 2rem;
 
 	.playgrounds {
 		display: flex;

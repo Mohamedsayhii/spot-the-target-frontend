@@ -5,6 +5,11 @@ const Navbar = styled.nav`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 2rem;
+
+	.title {
+		font-size: 5rem;
+	}
 
 	.nav-buttons {
 		display: flex;
@@ -15,10 +20,9 @@ const Navbar = styled.nav`
 function Header() {
 	return (
 		<Navbar>
-			<h1>Spot The Target</h1>
+			<h1 className='title'>Spot The Target</h1>
 			<div className='nav-buttons'>
-				<h1>HOME</h1>
-				<h1>LEADERBOARDS</h1>
+				<h1>Leaderboards</h1>
 			</div>
 		</Navbar>
 	);
