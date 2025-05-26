@@ -16,7 +16,7 @@ function Playground() {
 
 	return (
 		<PlaygroundWrapper>
-			<Header />
+			<Header playground={true} />
 			<img src={`/src/assets/${playgroundName}.gif`} alt='' />
 		</PlaygroundWrapper>
 	);

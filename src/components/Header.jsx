@@ -17,12 +17,19 @@ const Navbar = styled.nav`
 	}
 `;
 
-function Header() {
+function Header({ playground }) {
 	return (
 		<Navbar>
 			<h1 className='title'>Spot The Target</h1>
 			<div className='nav-buttons'>
-				<h1>Leaderboards</h1>
+				{playground && (
+					<Link to='/'>
+						<h1>Home</h1>
+					</Link>
+				)}
+				<Link to='/leaderboards'>
+					<h1>Leaderboards</h1>
+				</Link>
 			</div>
 		</Navbar>
 	);
